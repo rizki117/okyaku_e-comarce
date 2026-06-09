@@ -1,0 +1,80 @@
+.categoryWrapper {
+  position: fixed;
+  top: 50px; /* tepat di bawah NavbarAtas */
+  left: 0;
+  width: 100%;
+  z-index: 1090;
+
+  background: rgba(220, 220, 220, 0.95);
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
+  padding: 8px 12px;
+}
+
+.categoryScroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.categoryScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.categoryItem {
+  flex-shrink: 0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #333;
+}
+
+.categoryItem:hover {
+  background: #ff6b35;
+  color: white;
+  border-color: #ff6b35;
+}
+
+.active {
+  background: #ff6b35;
+  color: white;
+  border-color: #ff6b35;
+}
+
+
+@media (max-width: 768px) {
+  .categoryWrapper {
+    padding: 6px 10px;
+  }
+
+  .categoryItem {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categoryWrapper {
+    padding: 6px 8px;
+  }
+
+  .categoryItem {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .categoryItem {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}

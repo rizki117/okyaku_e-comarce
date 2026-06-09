@@ -1,0 +1,61 @@
+.signin-btn {
+  background: linear-gradient(135deg, #ffd93d, #ffcd3c);
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  white-space: nowrap;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.signin-btn::before {
+  content: "👤";
+  font-size: 0.875rem;
+}
+
+.signin-btn:hover {
+  background: linear-gradient(135deg, #ffcd3c, #ffc107);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.signin-btn:active {
+  transform: translateY(0px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .signin-btn {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.813rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .signin-btn {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.75rem;
+    border-radius: 16px;
+  }
+}
+
+/* Small mobile - sembunyikan teks, tampil icon saja */
+@media (max-width: 360px) {
+  .signin-text {
+    display: none;
+  }
+
+  .signin-btn {
+    padding: 0.4rem 0.5rem;
+  }
+}

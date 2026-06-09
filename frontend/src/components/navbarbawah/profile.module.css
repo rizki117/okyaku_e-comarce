@@ -1,0 +1,36 @@
+/* Avatar mengikuti ukuran icon navbar */
+.avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+.activeAvatar {
+  border: 2px solid #FF6B6B;
+}
+
+/* ✅ User Info */
+.userInfo {
+  padding: 12px 16px;
+  background: #1A2535;
+  border-radius: 8px 8px 0 0;
+}
+
+.userName {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #F1F5F9;
+}
+
+.userEmail {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #64748B;
+}

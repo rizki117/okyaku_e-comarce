@@ -1,0 +1,44 @@
+/* components/navbaratas/categoryicon.module.css */
+
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: none;
+
+  margin-left: 8px;
+
+  cursor: pointer;
+  color: white;
+
+  padding: 4px;
+
+  transition: all 0.2s ease;
+}
+
+/* hover halus */
+.iconWrapper:hover {
+  transform: translateY(-1px);
+  opacity: 0.85;
+}
+
+/* klik */
+.iconWrapper:active {
+  transform: scale(0.9);
+}
+
+/* ICON */
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* TEXT */
+.iconText {
+  font-size: 10px;
+  margin-top: 2px;
+  opacity: 0.9;
+}

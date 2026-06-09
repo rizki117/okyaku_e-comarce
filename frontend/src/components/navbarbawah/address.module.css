@@ -1,0 +1,279 @@
+/* address.module.css */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1300;
+}
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0F1923;
+  border-radius: 20px 20px 0 0;
+  z-index: 1400;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 20px 0;
+}
+
+.handle {
+  width: 36px;
+  height: 4px;
+  background: #2D3748;
+  border-radius: 99px;
+  margin: 12px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 12px;
+  border-bottom: 1px solid #1E2D3D;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #F1F5F9;
+}
+
+.closeBtn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #1E2D3D;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94A3B8;
+}
+
+.body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 16px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px 0;
+  color: #64748B;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  background: #1A2535;
+  border: 1px solid #2D3748;
+  border-radius: 10px;
+  color: #F1F5F9;
+  font-size: 14px;
+  margin-bottom: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #94A3B8;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 10px;
+}
+
+.btnCancel {
+  flex: 1;
+  padding: 13px;
+  background: #1E2D3D;
+  border: none;
+  border-radius: 12px;
+  color: #94A3B8;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btnSave {
+  flex: 2;
+  padding: 13px;
+  background: linear-gradient(135deg, #FF6B6B, #FF69B4);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card {
+  background: #111827;
+  border: 1px solid #1E2D3D;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.cardActive {
+  background: #1A2535;
+  border: 1px solid #FF6B6B;
+}
+
+.radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #2D3748;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.radioActive {
+  border: 2px solid #FF6B6B;
+  background: #FF6B6B;
+}
+
+.info {
+  flex: 1;
+}
+
+.badgeRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.badge {
+  background: #FF6B6B20;
+  color: #FF6B6B;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 99px;
+}
+
+.badgeDefault {
+  background: #22C55E20;
+  color: #22C55E;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 99px;
+}
+
+.name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #F1F5F9;
+}
+
+.phone {
+  margin: 2px 0;
+  font-size: 12px;
+  color: #64748B;
+}
+
+.address {
+  margin: 0;
+  font-size: 12px;
+  color: #94A3B8;
+}
+
+.addBtn {
+  width: 100%;
+  padding: 13px;
+  background: #1A2535;
+  border: 1px dashed #2D3748;
+  border-radius: 14px;
+  color: #64748B;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.footer {
+  padding: 0 16px;
+}
+
+.confirmBtn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.confirmActive {
+  background: linear-gradient(135deg, #FF6B6B, #FF69B4);
+}
+
+.confirmDisabled {
+  background: #64748B;
+  cursor: not-allowed;
+}
+
+
+/* Tombol hapus di card alamat */
+.deleteBtn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #FF4D4D15;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FF6B6B;
+  flex-shrink: 0;
+  transition: background 0.15s;
+  align-self: flex-start;
+}
+
+.deleteBtn:hover {
+  background: #FF4D4D30;
+}
+
+.deleteBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
